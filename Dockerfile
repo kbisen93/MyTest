@@ -1,10 +1,10 @@
 FROM alpine/git
 WORKDIR /app
-RUN git clone https://github.optum.com/sbhaisar/MavenTest.git
+RUN git clone https://github.com/kbisen93/MyTest.git
 
 FROM maven:3.5-jdk-8-alpine
 WORKDIR /app
-COPY --from=0 /app/MavenTest /app
+COPY --from=0 /app/MyTest /app
 RUN mvn clean package install
 
 FROM openjdk:8-jre-alpine
