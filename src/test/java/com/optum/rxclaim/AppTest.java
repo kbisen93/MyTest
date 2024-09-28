@@ -8,7 +8,7 @@ public class AppTest {
 
 	@Test
 	public void test() {
-		System.out.println("$$....Welcome to Maven Project1....$$");
+		System.out.println("$$....Welcome to Maven Project2....$$");
 	}
 
 }
